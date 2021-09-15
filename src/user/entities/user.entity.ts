@@ -10,10 +10,12 @@ export class User {
   id: string;
 
   @Column()
+  @Field()
   @Length(1, 200)
   name: string;
 
   @Column()
+  @Field()
   @IsEmail()
   email: string;
 }
