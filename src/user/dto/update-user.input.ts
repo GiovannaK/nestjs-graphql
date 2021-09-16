@@ -26,4 +26,9 @@ export class UpdateUserInput {
   @Field({ nullable: true })
   @IsEmail()
   email?: string;
+
+  @IsOptional()
+  @Field({ nullable: true })
+  @Length(8, 200)
+  password?: string;
 }
