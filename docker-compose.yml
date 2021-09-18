@@ -18,9 +18,9 @@ services:
       context: .
     ports:
       - ${PORT}:3001
-    command: npm run start:dev
+    command: npm run start:prod
     volumes:
-      - .:/usr/app
+      - .:/app
     environment:
       DB_HOST: database
     depends_on:

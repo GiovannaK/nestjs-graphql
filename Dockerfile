@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
 
@@ -12,4 +12,4 @@ RUN npm run build
 
 EXPOSE 3001
 
-CMD [ "node", "dist/main" ]
+CMD [ "sh", "-c", "npm run migration:run && npm run start:prod" ]
