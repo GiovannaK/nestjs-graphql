@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { join } from 'path';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
+import { VideoModule } from './video/video.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     UserModule,
     AuthModule,
+    VideoModule,
   ],
   controllers: [AppController],
   providers: [AppService],
