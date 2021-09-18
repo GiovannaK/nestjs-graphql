@@ -18,7 +18,7 @@ services:
       context: .
     ports:
       - ${PORT}:3001
-    command: npm run start:prod
+    command: npm run start:dev
     volumes:
       - .:/usr/app
     environment:
