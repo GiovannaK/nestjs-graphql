@@ -16,6 +16,10 @@ import { VideoModule } from './video/video.module';
     GraphQLModule.forRoot({
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       context: ({ req }) => ({ req }),
+      cors: {
+        origin: '*',
+        credentials: true,
+      },
     }),
     UserModule,
     AuthModule,
