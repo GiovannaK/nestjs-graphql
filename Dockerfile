@@ -12,6 +12,8 @@ COPY . .
 
 EXPOSE 3001
 
+RUN npm run migration:run
+
 RUN npm run build
 
 
