@@ -20,7 +20,7 @@ services:
       - ${PORT}:3001
     command: npm run start:prod
     volumes:
-      - .:/app
+      - .:/usr/src/app
     environment:
       DB_HOST: database
     depends_on:
