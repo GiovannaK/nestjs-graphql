@@ -1,0 +1,15 @@
+---
+application:
+  name: "nestjs_auth"
+  project: "test"
+  organization: "taskway"
+databases:
+- type: "postgresql"
+  name: "nestgraphql"
+  version: "12"
+routers:
+- name: "main-nestjs_auth"
+  routes:
+  - application_name: "nestjs_auth"
+    paths: "/*"
+    
