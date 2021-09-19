@@ -14,7 +14,4 @@ EXPOSE 3001
 
 RUN npm run build
 
-RUN npm run migration:run
-
-
-CMD [ "node", "dist/main" ]
+CMD [ "npm", "run", "start:prod" ]
